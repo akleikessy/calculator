@@ -1,7 +1,7 @@
 html{
     box-sizing: border-box;
     font-family: Verdana;
-    font-size: 36px;
+    font-size: 62.5%;
 }
 
 *, ::before, ::after {
@@ -12,6 +12,7 @@ html{
 .container {
     background-color: black;
     border: 4px solid black;
+    border-radius: 8px;
     width: 410px;
     height: 610px;
     margin: 0 auto;
@@ -25,11 +26,17 @@ html{
 }
 .display {
     border: 4px solid black;
-    background-color: darkgray;
+    border-radius: 8px;
+    background-color: #252525;
+    color: #fff;
     width: 400px;
     height: 100px;
+    text-align: right;
+    font-size: 5rem;
+    padding-left: 10px;
+    padding-right: 20px;
 }
-.operators {
+.operator-keys {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -46,33 +53,28 @@ html{
     height: 100px;
     border: 1px solid black;
 }
-.zero, .dot, .equal {
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 36px;
- 
-}
 
 .zero {
     flex: 2 1 0;
 }
-.dot {
+.decimal {
     flex: 1 1 0;
 }
-.equal {
+.equal-sign {
     flex: 1 1 0;
+}
+
+.operator, .equal-sign {
+    background-color: darkorange;
 }
 .resop {
     background-color: dodgerblue;
 }
-.optype {
+.key {
     border: 2px solid black;
     border-radius: 8px;
-    font-size: 36px;
+    font-size: 2rem;
 }
-.mathop, .equal {
-    background-color: darkorange;
-}
-.num, .zero, .dot {
+.digit, .zero, .decimal {
     background-color: teal;
 }
