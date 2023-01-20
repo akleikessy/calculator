@@ -16,10 +16,10 @@ function inputDigit(digit) {
         calculator.displayValue = displayValue === "0" ? digit : displayValue + digit;
     }
 
-    console.log(calculator);
+    //console.log(calculator);
 }
 
-function calculate(firstOperand, secondOperand, operator){
+function operate(firstOperand, secondOperand, operator){
     if (operator === "+"){
         return firstOperand + secondOperand;
     } else if (operator === "-"){
@@ -72,7 +72,7 @@ function handleOperator(nextOperator) {
         //update the firstOperand property
         calculator.firstOperand = inputValue;
     } else if (operator) {
-        const result = calculate(firstOperand, inputValue, operator);
+        const result = operate(firstOperand, inputValue, operator);
         //calculator.displayValue = String(result);
         calculator.displayValue = `${parseFloat(result.toFixed(7))}`;
         calculator.firstOperand = result;

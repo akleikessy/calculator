@@ -67,8 +67,20 @@ html{
 .operator, .equal-sign {
     background-color: darkorange;
 }
+.operator:hover, .equal-sign:hover {
+    background-color: darkgoldenrod;
+}
+.operator:active, .equal-sign:active {
+    background-color: orange;
+}
 .resop {
     background-color: dodgerblue;
+}
+.resop:hover {
+    background-color: rgb(94, 159, 224);
+}
+.resop:active {
+    background-color: beige;
 }
 .key {
     border: 2px solid black;
@@ -77,4 +89,10 @@ html{
 }
 .digit, .zero, .decimal {
     background-color: teal;
+}
+.digit:hover, .decimal:hover {
+    background-color: rgb(18, 184, 184);
+}
+.digit:active, .decimal:active {
+    background-color: darkturquoise;
 }
